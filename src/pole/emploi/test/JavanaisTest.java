@@ -28,6 +28,8 @@ class JavanaisTest {
 		assertEquals("moyen", Javanais.dechiffrer("mavoyen"));
 		assertEquals("exemple", Javanais.dechiffrer("avexavemplave"));
 		assertEquals("au", Javanais.dechiffrer("avau"));
+		assertEquals("base", Javanais.dechiffrer("bavasave"));
+		assertEquals("yavine", Javanais.dechiffrer("yavine"));
 	}
 	/**
 	 * Tester le cas d'une phrase Nulle pour le chiffrement & déchiffrement
