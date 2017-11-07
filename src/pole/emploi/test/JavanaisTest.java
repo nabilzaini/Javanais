@@ -30,6 +30,8 @@ class JavanaisTest {
 		assertEquals("au", Javanais.dechiffrer("avau"));
 		assertEquals("base", Javanais.dechiffrer("bavasave"));
 		assertEquals("yavine", Javanais.dechiffrer("yavine"));
+		assertEquals("iav", Javanais.dechiffrer("iav"));
+		
 	}
 	/**
 	 * Tester le cas d'une phrase Nulle pour le chiffrement & déchiffrement

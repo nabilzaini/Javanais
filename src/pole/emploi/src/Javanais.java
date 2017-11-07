@@ -68,15 +68,16 @@ public class Javanais {
 	public static String dechiffrer(String phrase) {
 		int i = 0;
 		StringBuffer resultat = new StringBuffer();
-		boolean isConsonne = true;
+		boolean etatConsonne = true;
 		if (null != phrase && !phrase.isEmpty()) {
 			int taillePhrase = phrase.length() - 2;
 			while (i < taillePhrase) {
-				if (isConsonne && phrase.charAt(i) == 'a' && phrase.charAt(i + 1) == 'v' && isVoyelle(phrase.charAt(i + 2))) {
+				if (etatConsonne && phrase.charAt(i) == 'a' && phrase.charAt(i + 1) == 'v'
+						&& isVoyelle(phrase.charAt(i + 2))) {
 					resultat.append(phrase.charAt(i + 2));
 					i += 3;
 				} else {
-					isConsonne = isConsonne(phrase.charAt(i));
+					etatConsonne = isConsonne(phrase.charAt(i));
 					resultat.append(phrase.charAt(i));
 					i += 1;
 				}
